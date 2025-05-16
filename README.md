@@ -64,6 +64,30 @@ A modern web application for managing your Pokémon collection using the Pokéde
 
 Click the sun/moon icon in the header to toggle between light and dark mode. Your preference will be saved and applied on future visits.
 
+## Troubleshooting
+
+### Database Connection Issues
+
+This application uses Neon's PostgreSQL service in the US-East-1 region. If you encounter a database connection error, it may be due to:
+
+1. Temporary Neon service disruptions (check [status.neon.tech](https://status.neon.tech))
+2. Database connection string issues in your .env file
+3. Network connectivity problems
+
+The application will display a user-friendly error message if it cannot connect to the database. You can click "Try Again" to attempt reconnection.
+
+### Running With a Different Database
+
+If Neon is experiencing issues, you can set up an alternative database:
+
+1. Create a free PostgreSQL database on another service (Supabase, Railway, etc.)
+2. Update your `.env` file with the new connection string
+3. Initialize the database schema:
+   ```
+   npx prisma db push
+   ```
+4. Use the application's "Add Pokémon" feature to populate the database
+
 ## Project Structure
 
 ```
