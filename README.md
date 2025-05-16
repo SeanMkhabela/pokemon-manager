@@ -113,3 +113,9 @@ pokemon-manager/
 - [Next.js](https://nextjs.org/) for the application framework
 - [Shadcn/UI](https://ui.shadcn.com/) for the component library
 - [Neon](https://neon.tech/) for the PostgreSQL database service
+
+  ![image](https://github.com/user-attachments/assets/850cdde5-fa7f-4427-87d8-3e5d4fe1265d)
+
+  ![image](https://github.com/user-attachments/assets/b0a998aa-0b1e-4adc-8832-50bd47e0fccf)
+
+
