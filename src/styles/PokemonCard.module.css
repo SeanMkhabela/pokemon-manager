@@ -1,0 +1,252 @@
+/* PokemonCard Styles */
+
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cardContent {
+    position: relative;
+    padding: 1rem;
+}
+
+.pokedexNumber {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.75rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sprite {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.sprite:hover {
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.typeContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.typeTag {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-transform: capitalize;
+    transition: background-color 0.2s ease;
+}
+
+.typeTag:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Animation classes */
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Type background colors - Light Theme */
+
+.typeBgGrass {
+    background-color: #48d0b0;
+}
+
+.typeBgPoison {
+    background-color: #b97fc9;
+}
+
+.typeBgFire {
+    background-color: #fb6c6c;
+}
+
+.typeBgWater {
+    background-color: #609fb5;
+}
+
+.typeBgBug {
+    background-color: #a8b820;
+}
+
+.typeBgNormal {
+    background-color: #a8a878;
+}
+
+.typeBgElectric {
+    background-color: #f8d030;
+}
+
+.typeBgGround {
+    background-color: #e0c068;
+}
+
+.typeBgFairy {
+    background-color: #ee99ac;
+}
+
+.typeBgFighting {
+    background-color: #c03028;
+}
+
+.typeBgPsychic {
+    background-color: #f85888;
+}
+
+.typeBgRock {
+    background-color: #b8a038;
+}
+
+.typeBgGhost {
+    background-color: #705898;
+}
+
+.typeBgIce {
+    background-color: #98d8d8;
+}
+
+.typeBgDragon {
+    background-color: #7038f8;
+}
+
+.typeBgDark {
+    background-color: #705848;
+}
+
+.typeBgSteel {
+    background-color: #b8b8d0;
+}
+
+.typeBgFlying {
+    background-color: #a890f0;
+}
+
+
+/* Type background colors - Dark Theme */
+
+:global(.dark-theme) .typeBgGrass {
+    background-color: #1a9e83;
+}
+
+:global(.dark-theme) .typeBgPoison {
+    background-color: #8b4c9e;
+}
+
+:global(.dark-theme) .typeBgFire {
+    background-color: #d13e3e;
+}
+
+:global(.dark-theme) .typeBgWater {
+    background-color: #4081ad;
+}
+
+:global(.dark-theme) .typeBgBug {
+    background-color: #8a991a;
+}
+
+:global(.dark-theme) .typeBgNormal {
+    background-color: #8a8a5c;
+}
+
+:global(.dark-theme) .typeBgElectric {
+    background-color: #d1ad0f;
+}
+
+:global(.dark-theme) .typeBgGround {
+    background-color: #b89f3f;
+}
+
+:global(.dark-theme) .typeBgFairy {
+    background-color: #cf7f89;
+}
+
+:global(.dark-theme) .typeBgFighting {
+    background-color: #9e2420;
+}
+
+:global(.dark-theme) .typeBgPsychic {
+    background-color: #d2366a;
+}
+
+:global(.dark-theme) .typeBgRock {
+    background-color: #9e8728;
+}
+
+:global(.dark-theme) .typeBgGhost {
+    background-color: #554180;
+}
+
+:global(.dark-theme) .typeBgIce {
+    background-color: #62b1b1;
+}
+
+:global(.dark-theme) .typeBgDragon {
+    background-color: #5a25d1;
+}
+
+:global(.dark-theme) .typeBgDark {
+    background-color: #544030;
+}
+
+:global(.dark-theme) .typeBgSteel {
+    background-color: #8f8fa3;
+}
+
+:global(.dark-theme) .typeBgFlying {
+    background-color: #8973cd;
+}
+
+:global(.dark-theme) .card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+:global(.dark-theme) .card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+:global(.dark-theme) .typeTag {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+:global(.dark-theme) .typeTag:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}

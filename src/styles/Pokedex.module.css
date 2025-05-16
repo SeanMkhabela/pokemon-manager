@@ -1,0 +1,45 @@
+/* Pokedex Page Styles */
+
+.pageContainer {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    transition: background-color 0.3s ease;
+}
+
+.contentContainer {
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+
+/* Responsive grid adjustments */
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* Dark theme styles */
+
+:global(.dark-theme) .pageContainer {
+    background-color: #0f172a;
+}
